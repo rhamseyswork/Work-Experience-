@@ -36,14 +36,14 @@ LazyLoadPage.propTypes = {
 
 const App = () => {
   return (
-    <div className='APP'>
+    <div className='App'>
       <Suspense fallback={<div>Nav bar Loading...</div>}>
         {/* Corrected component name to NavBar */}
         <NavBar tabs={NavBarData.tabs}> 
           {NavBarData.title}
         </NavBar>
       </Suspense>
-      <Routes>
+      <Routes >
         {/* Define your routes properly */}
         <Route path='/' element={<Home />} />
         {NavBarData.tabs.map((tab) => {
