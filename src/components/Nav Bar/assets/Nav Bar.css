@@ -1,0 +1,14 @@
+.navBar ul li a.default:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.navBar ul li a.active {
+    color: orange!important;
+}
+
+.navBar {
+    text-align: center;
+}
+
+
