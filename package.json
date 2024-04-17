@@ -1,60 +1,63 @@
 {
-  "name": "ryanmithellofficial.com",
+  "name": "Boilerplate",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Ryan Mitchells Offical's Website",
+  "description": "Boilerplate Template",
   "main": "index.html",
+  "_comment": "//npm install gh-pages --save-dev",
   "scripts": {
     "start-react": "react-scripts start",
     "build-react": "react-scripts build",
-    "test-react": "react-scripts test",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "vite --port 3050",
-    "start": "vite --port 0001",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && mv dist ./dist_version_control/dist_$(date +%Y%m%d%H%M%S)"
+    "predeploy": "npm run build",
+    "deploy": "npm run build && mv dist ./dist_version_control/dist_$(date +%Y%m%d%H%M%S)",
+    "start": "vite"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhamseyswork/Slide-Show.git"
+    "url": "git+https://github.com/rhamseyswork/[URL]"
   },
   "keywords": [
-    "Ryan Mitchell",
-    "Ryan Mitchell Offical Website"
+    "Rhamseys",
+    "Garcia",
+    "Portfolio"
   ],
   "author": "OC Pace Setters",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rhamseyswork/Slide-Show/issues"
+    "url": "https://github.com/rhamseyswork/[URL]/issues"
   },
-  "homepage": "https://github.com/rhamseyswork/Slide-Show#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "dotenv": "^16.4.5",
-    "npm": "^10.5.0",
+    "dotenv": "^16.4.4",
+    "gh-pages": "^3.2.3",
+    "npm": "^10.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
-    "vite": "^5.2.6",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "gh-pages": "^6.1.1",
-    "vite": "^5.2.6"
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.2.0"
   },
   "eslintConfig": {
     "extends": [
@@ -75,3 +78,4 @@
     ]
   }
 }
+
