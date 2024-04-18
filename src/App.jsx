@@ -1,10 +1,12 @@
 import React from 'react'
+import * as pages from './App.js'
+import './App.css'
 
 function App() {
 
   return (
     <>
-      <p>App</p>
+      <pages.Experience />
     </>
   )
 }
